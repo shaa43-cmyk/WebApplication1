@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Premium Calculator";
+}
+
+<h2>Premium Calculator</h2>
+
+<div class="container">
+    <div>
+        <label>Name</label>
+        <input type="text" id="txtName" />
+    </div>
+
+    <div>
+        <label>Age Next Birthday</label>
+        <input type="number" id="txtAge" />
+    </div>
+
+    <div>
+        <label>Date Of Birth</label>
+        <input type="text" id="txtDob" placeholder="MM/YYYY" />
+    </div>
+
+    <div>
+        <label>Occupation</label>
+        <select id="ddlOccupation">
+            <option value="">Select</option>
+            <option>Cleaner</option>
+            <option>Doctor</option>
+            <option>Author</option>
+            <option>Farmer</option>
+            <option>Mechanic</option>
+            <option>Florist</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Death Sum Insured</label>
+        <input type="number" id="txtDeathSum" />
+    </div>
+
+    <br />
+
+    <!-- <button id="btnCalculate">Calculate</button> -->
+
+    <h3>
+        Monthly Premium:
+        <span id="premiumResult">0.00</span>
+    </h3>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="~/Scripts/premium.js"></script>
